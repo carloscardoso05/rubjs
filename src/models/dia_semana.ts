@@ -1,7 +1,13 @@
-export type DiaSemana = 'segunda' | 'terca' | 'quarta' | 'quinta' | 'sexta'
+export type DiaSemana = 'segunda' | 'terca' | 'quarta' | 'quinta' | 'sexta';
 
-export const dias: DiaSemana[] = ['segunda', 'terca', 'quarta', 'quinta', 'sexta'] as const;
+export const dias: DiaSemana[] = [
+  'segunda',
+  'terca',
+  'quarta',
+  'quinta',
+  'sexta',
+] as const;
 
 export function getDiaSemana(dia: Date): DiaSemana {
-    return dias[dia.getDay() - 1];
+  return dias[dia.getDay() - 1];
 }
