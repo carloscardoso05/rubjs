@@ -1,11 +1,18 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { ScraperService } from './scraper/scraper.service';
+import { BotService } from './bot/bot.service';
+import { TelegrafModule } from 'nestjs-telegraf';
+import { FormatterService } from './formatter/formatter.service';
+import 'dotenv/config';
 
 @Module({
-  imports: [],
+  imports: [
+    TelegrafModule.forRoot({
+      token: process.env.TELEGRAM_KEY!,
+    }),
+  ],
   controllers: [AppController],
-  providers: [AppService, ScraperService],
+  providers: [ScraperService, BotService, FormatterService],
 })
 export class AppModule {}
