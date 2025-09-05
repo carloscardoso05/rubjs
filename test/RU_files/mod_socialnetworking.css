@@ -1,0 +1,92 @@
+.follow_us {
+	float:left;
+	margin-top:8px
+}
+.like_us {
+	float:left;
+	margin-top:8px;
+	margin-left:10px;
+	width:75px
+}
+.social ol, ul {
+	list-style:none
+}
+.like_us h6 {
+	margin-bottom:2px
+}
+.social {
+	padding-top:2px;
+	margin-top:2px;
+	float:left
+}
+.social li {
+	display:block;
+	float:left;
+	width:18px;
+	height:18px;
+	margin-right:3px
+}
+
+.social li a {
+	display:block;
+	width:100%;
+	height:100%
+}
+.social li.facebook {
+	background-position:-4px -4px
+}
+.social li.twitter {
+	background-position:-25px -4px
+}
+.social li.likedin {
+	background-position:-46px -4px
+}
+.social li.pinit {
+	background-position:-67px -4px
+}
+.social li.yelp {
+	background-position:-89px -4px
+}
+.social li.locate {
+	background-position:-110px -4px
+}
+.social li.tumblr {
+	background-position:-129px -4px
+}
+.social li.facebook:hover {
+	background-position: -4px -27px;
+}
+.social li.twitter:hover {
+	background-position:-25px -27px
+}
+.social li.likedin:hover {
+	background-position:-46px -27px
+}
+.social li.pinit:hover {
+	background-position:-67px -27px
+}
+.social li.yelp:hover {
+	background-position:-89px -27px
+}
+.social li.locate:hover {
+	background-position:-110px -27px
+}
+.social li.tumblr:hover {
+	background-position:-129px -27px
+}
+.fb-like {
+	width:75px!important;
+	margin-top:2px
+}
+.social_share_plugin{
+	float:right !important;
+	font-size:1em !important;
+}
+.fb-like span {
+	width:75px!important
+}
+.fb-like .fb_ltr {
+	width:75px!important
+}
+.social li { background:url(../images/social_icons.png) no-repeat }
+
