@@ -14,7 +14,11 @@ export class BotService {
 
   @Start()
   async onStart(@Ctx() ctx: Context) {
-    await ctx.reply('Olá');
+    await ctx.reply(
+      'Olá. Esse bot exibe o cardápio do RU da UFPA.' +
+        '\nDigite /hoje para ver o cardápio de hoje.' +
+        '\nDigite /semana para ver o cardápio de toda a semana.',
+    );
   }
 
   @Hears('/hoje')
